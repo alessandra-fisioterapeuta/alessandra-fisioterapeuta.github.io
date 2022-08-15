@@ -17,7 +17,10 @@ var mouse = {
     setOrigin: function(e) {
         this._x = e.offsetLeft + Math.floor(e.offsetWidth/2);
         this._y = e.offsetTop + Math.floor(e.offsetHeight/2);
-        
+
+    },
+    show: function() {
+        return '(' + this.x + ',' + this.y + 
     }
 }
 var counter = 0;
